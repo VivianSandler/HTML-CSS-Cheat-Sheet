@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS Cheat Sheet</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#banner">Home</a></li>
+        <li><a href="#HTML" class="light-blue">HTML</a></li>
+        <li><a href="#CSS" class="pink">CSS</a></li>
+        <li><a href="#footer">About</a></li>
+      </ul>
+    </nav>
+    <div class="main-content">
+      <div id="banner">
+        <h1>
+          <span class="light-blue">HTML</span> &
+          <span class="pink">CSS</span> Cheat Sheet
+        </h1>
+      </div>
+
+      <h2 id="HTML">
+        <br />
+        <span class="bold light-blue">H</span>yper<span class="bold light-blue"
+          >T</span
+        >ext <span class="bold light-blue">M</span>arkup
+        <span class="bold light-blue">L</span>anguage
+      </h2>
+      <h3>Table Tags</h3>
+      <table class="html-table">
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tr>
+          <td><span class="element">&lt;table&gt;</span></td>
+          <td>Table</td>
+          <td>The wrapper element for all HTML tables.</td>
+        </tr>
+        <tr>
+          <td><span class="element">&lt;thead&gt;</span></td>
+          <td>Table Head</td>
+          <td>The set of rows defining the column headers in a table.</td>
+        </tr>
+        <tr>
+          <td><span class="element">&lt;tbody&gt;</span></td>
+          <td>Table Body</td>
+          <td>The set of rows containing actual table data.</td>
+        </tr>
+        <tr>
+          <td><span class="element">&lt;tr&gt;</span></td>
+          <td>Table Row</td>
+          <td>
+            Defines a row of cells in a table. The row's cells can then be
+            established using a mix of
+            <span class="element">&lt;th&gt;</span> and
+            <span class="element">&lt;td&gt;</span> elements.
+          </td>
+        </tr>
+        <tr>
+          <td><span class="element">&lt;td&gt;</span></td>
+          <td>Data Cell</td>
+          <td>
+            This element defines a cell of a table that contains data and may be
+            used as a child of the
+            <span class="element">&lt;tr&gt;</span> element.
+          </td>
+        </tr>
+        <tr>
+          <td><span class="element">&lt;th&gt;</span></td>
+          <td>Header Cell</td>
+          <td>
+            This element is used just like the
+            <span class="element">&lt;td&gt;</span> element, but its purpose is
+            to represent the heading for either a column or a row.
+          </td>
+        </tr>
+        <tr>
+          <td><span class="element">&lt;tfoot&gt;</span></td>
+          <td>Table Foot</td>
+          <td>The set of rows defining the footer in a table.</td>
+        </tr>
+      </table>
+
+      <h3>Table Attributes</h3>
+      <table class="html-table">
+        <thead>
+          <tr>
+            <th>Attribute</th>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tr>
+          <td><span class="element">colspan</span></td>
+          <td>Column Span</td>
+          <td>
+            Defines how many columns a
+            <span class="element">&lt;td&gt;</span> element should span.
+          </td>
+        </tr>
+        <tr>
+          <td><span class="element">rowspan</span></td>
+          <td>Row Span</td>
+          <td>
+            Defines how many rows a
+            <span class="element">&lt;td&gt;</span> element should span.
+          </td>
+        </tr>
+      </table>
+      <hr />
+      <h2 id="CSS">
+        <br />
+        <span class="bold pink">C</span>ascading
+        <span class="bold pink">S</span>tyle
+        <span class="bold pink">S</span>heets
+      </h2>
+
+      <h3>Position Property</h3>
+      <table class="css-table">
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tr>
+          <td><span class="element">static</span></td>
+          <td>
+            The element is positioned according to the normal flow of the
+            document. The <span class="element">top</span>,
+            <span class="element">right</span>,
+            <span class="element">bottom</span>,
+            <span class="element">left</span>, and
+            <span class="element">z-index</span> properties have no effect. This
+            is the default value.
+          </td>
+        </tr>
+        <tr>
+          <td><span class="element">relative</span></td>
+          <td>
+            The element is positioned according to the normal flow of the
+            document, and then offset relative to itself based on the values of
+            <span class="element">top</span>,
+            <span class="element">right</span>,
+            <span class="element">bottom</span>, and
+            <span class="element">left</span>. The offset does not affect the
+            position of any other elements; thus, the space given for the
+            element in the page layout is the same as if position were
+            <span class="element">static</span>.
+          </td>
+        </tr>
+        <tr>
+          <td><span class="element">absolute</span></td>
+          <td>
+            The element is removed from the normal document flow, and no space
+            is created for the element in the page layout. The element is
+            positioned relative to its closest <em>positioned</em> (meaning
+            <em>not</em> <span class="element">static</span>) ancestor (if any)
+            or to the initial containing block. Its final position is determined
+            by the values of <span class="element">top</span>,
+            <span class="element">right</span>,
+            <span class="element">bottom</span>, and
+            <span class="element">left</span>.
+          </td>
+        </tr>
+        <tr>
+          <td><span class="element">fixed</span></td>
+          <td>
+            The element is removed from the normal document flow, and no space
+            is created for the element in the page layout. The element is
+            positioned relative to its initial containing block and always stays
+            in the same place even if the page is scrolled. Its final position
+            is determined by the values of <span class="element">top</span>,
+            <span class="element">right</span>,
+            <span class="element">bottom</span>, and
+            <span class="element">left</span>.
+          </td>
+        </tr>
+        <tr>
+          <td><span class="element">sticky</span></td>
+          <td>
+            The element is positioned based on the user's scroll position. A
+            sticky element toggles between
+            <span class="element">relative</span> and
+            <span class="element">fixed</span>, depending on the scroll
+            position. It is positioned relative until a given offset position is
+            met in the viewport, then it "sticks" in place (like
+            <span class="element">position: fixed</span>).
+          </td>
+        </tr>
+      </table>
+      <hr />
+      <footer id="footer">
+        <p>
+          Page created as part of Codecademy's Front-End Engineer Career Path
+          <br />
+          Challenge Project: <span class="bold">Build Your Own Cheat Sheet</span
+          ><br />
+          Coded by: <span class="bold">Vivian Sandler</span>
+        </p>
+        <a
+          href="https://github.com/VivianSandler/VivianSandler.github.io"
+          target="_blank"
+          ><img src="./images/github.png" alt="GitHub logo" width="20px"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/vivian-sandler-2abb1214a/"
+          target="_blank"
+          ><img src="./images/linkedin.png" alt="LinkedIn logo" width="20px"
+        /></a>
+      </footer>
+    </div>
+  </body>
+</html>
