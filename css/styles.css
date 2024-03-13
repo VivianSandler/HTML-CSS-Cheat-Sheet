@@ -1,6 +1,7 @@
 body {
   background-color: antiquewhite;
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 nav {
@@ -47,6 +48,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   height: 20rem;
+  width: 100%;
   background: url("../images/coding_computer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -95,7 +97,12 @@ table {
   border: 1px solid black;
   border-collapse: collapse;
   margin: 0 auto 50px;
-  width: 50em;
+  width: 100%;
+  max-width: 800px;
+}
+
+.table-spacing {
+  margin: 0px 50px;
 }
 
 th {
